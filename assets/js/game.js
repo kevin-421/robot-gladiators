@@ -9,9 +9,10 @@ var enemyName = "Roborto";
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-function fight() {
-    //  Alert players that they are starting the round
-    window.alert("Welcome to Robot Gladiators!");
+
+while(enemyHealth > 0) {
+      
+   function fight(enemyName) 
 
     var promtFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose. ");
 
@@ -21,8 +22,8 @@ function fight() {
         enemyHealth = enemyHealth - playerAttack;
         console.log(
           playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
-        );
-      
+          );
+        
         // check enemy's health
         if (enemyHealth <= 0) {
           window.alert(enemyName + " has died!");
@@ -59,6 +60,5 @@ function fight() {
       }
       // if no (false), ask question again by running fight() again
       else {
-          fight();
-      }}
-      
+          fight(); }
+      }
