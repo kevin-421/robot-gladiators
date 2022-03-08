@@ -64,6 +64,7 @@ var fight = function(enemyNames) {
 }
 
 for (var i = 0; i < enemyNames.length; i++) {
-  debugger;
-  fight(enemyNames[1]);
+  var pickedEnemyName = enemyNames[i];
+  enemyHealth = 50;
+  fight(pickedEnemyName);
 };
